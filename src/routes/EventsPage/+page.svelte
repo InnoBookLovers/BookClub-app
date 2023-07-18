@@ -67,7 +67,7 @@
             <ul class="list">
                 <li class="card">
                     <div class="img">
-                        <img src="images/teaeven.png" alt="there is a book with tea">
+<!--                        <img src="images/teaeven.png" alt="there is a book with tea"> -->
                     </div>
                     <div class="text">
                         <h1 class="name">Tea Club collab</h1>
@@ -78,7 +78,7 @@
                 </li>
                 <li class="card">
                     <div class="img">
-                        <img src="images/dorian.png" alt="there is a photo of Dorian Gray">
+ <!--                       <img src="images/dorian.png" alt="there is a photo of Dorian Gray"> -->
                     </div>
                     <div class="text">
                         <h1 class="name">“The Portrait of Dorian Gray” discussion</h1>
@@ -89,7 +89,7 @@
                 </li>
                 <li class="card">
                     <div class="img">
-                        <img src="images/readeven1.png" alt="there is a book  ">
+<!--                        <img src="images/readeven1.png" alt="there is a book  "> -->
                     </div>
                     <div class="text">
                         <h1 class="name">Reading evening</h1>
