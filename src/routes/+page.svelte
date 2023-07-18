@@ -26,7 +26,7 @@
             </div>
 
             <div class="container">
-                <button><a href="#">Sign up</a></button>
+                <button><a href="/LoginPage">Sign up</a></button>
             </div>
 
         </div>
