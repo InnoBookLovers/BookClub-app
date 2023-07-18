@@ -3,6 +3,7 @@
 </script>
 
 <header class="header">
+    <base href="/BookClub-app/">
     <!-- <img src="$lib/images/logo.png" class="logo" alt="Our logo"> -->
 
     <nav class="nav-links">
