@@ -10,7 +10,7 @@ const config = {
 
 	kit: {
 		paths: {
-			base: dev ? '' : '/BookClub-app'
+			base: dev ? '' : process.env.BASE_PATH
 		},
 
 		adapter: adapter()
