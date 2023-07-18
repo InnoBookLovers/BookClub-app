@@ -8,7 +8,7 @@
     <div class="main">
 
         <div class="imageContainer">
-            <img src="../mainphoto.jpg" class="mainphoto" alt="That's us">
+            <!-- <img src="../mainphoto.jpg" class="mainphoto" alt="That's us"> -->
         </div>
 
         <div class="textContainer">
