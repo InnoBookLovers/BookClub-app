@@ -3,7 +3,7 @@
 </script>
 
 <header class="header">
-    <img src="$lib/images/logo.png" class="logo" alt="Our logo">
+    <!-- <img src="$lib/images/logo.png" class="logo" alt="Our logo"> -->
 
     <nav class="nav-links">
         <ul>
@@ -14,7 +14,7 @@
             <li><a href="/BlogPagePublic">Blog</a></li>
             <li><a href="/EventsPage">Events</a></li>
             <li><a href="/LoginPage">Log in</a></li>
-            <li><a href="https://t.me/innobooklovers"><img class="telegram" src="images/telegram.png" alt="Our telegram channel link"></a></li>
+            <!-- <li><a href="https://t.me/innobooklovers"><img class="telegram" src="images/telegram.png" alt="Our telegram channel link"></a></li> -->
         </ul>
     </nav>
     
