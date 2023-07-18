@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;800&display=swap');
+main {
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background-color: #D2EBE3;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-size: 16px;
+    font-family: 'League Spartan', sans-serif;
+    
+}
+.form1 {
+    display: flex;
+    flex-direction: column; /** default **/
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center; /** default **/
+    background-color: white;
+
+    width: 400px;
+    height: 199px;
+    padding: 20px;
+    border-radius: 20px;
+    gap:10px;
+}
+h1 {
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 800;
+    color:#73744A;
+    text-align: center;
+}
+
+
+#email, #password {
+    padding-left: 15px;
+    background-color:#F5F5F5;
+    border-radius: 20px;
+    height: 35px;
+    width: 390px;
+    border:none;
+}
+
+#login {
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    width: 131px;
+    height: 29px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+#login:hover {
+    transform:scale(1.05,1.05);
+}
+
+.itemsLast {
+    display: flex;
+    flex-direction: row;
+}
+
+#goto {
+    margin-top: 13px;
+    height: 18px;
+    width: 54px;
+    border: none;
+    background-color: white;
+    color: #73744A;
+    font-weight: 600;
+}
+#goto:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+/* #custom-button:hover {
+    background-color: rgb(255, 255, 255);
+}
+#custom-text {
+    margin-left: 10px;
+    color: #aaa;
+} */
