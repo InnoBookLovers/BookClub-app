@@ -180,11 +180,12 @@ a {
     background-color: white;
     width: 225px;
     /* Remove margin from here */
-    /* margin: 52px; */
+    margin: 26px;
     display: flex;
     flex-direction: column;
     position: relative;
     height: 100%;
+    margin-bottom: 52px;
 }
 
 .card img {
@@ -255,3 +256,14 @@ a {
     width: 277px;
     height: fit-content;
 }
+
+#container-wrapper {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    height: 100vh; /* Set the height of the container-wrapper to occupy the full viewport height */
+  }
+
+
+
+
