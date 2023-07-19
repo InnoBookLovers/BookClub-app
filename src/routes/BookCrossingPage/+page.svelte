@@ -21,7 +21,21 @@
         {
             book_name: "The Great Gatsby",
             author: "Francis Scott Fitzgerald",
-            language: "French",
+            language: "Russian",
+            //image_url: "book4.jpg",
+            social_media_url: "https://web.telegram.org/k/#@nhefy"
+        },
+	{
+            book_name: "The Shining",
+            author: "Stephen King",
+            language: "Russian",
+            //image_url: "book4.jpg",
+            social_media_url: "https://web.telegram.org/k/#@nhefy"
+        },
+	{
+            book_name: "Flowers for Algernon",
+            author: "Daniel Keyes",
+            language: "Russian",
             //image_url: "book4.jpg",
             social_media_url: "https://web.telegram.org/k/#@nhefy"
         },
