@@ -13,7 +13,7 @@
       <p class="author">Author: {author}</p>
       <p class="language">Language: {language}</p>
       <a href={social_media_url} target="_blank">
-        <button class="contact-button">Contact Owner</button>
+        <button class="Liza-contact-button">Contact Owner</button>
       </a>
     </div>
   </div>
