@@ -1,10 +1,7 @@
 <script lang="ts">
     import './LizaStyle.css';
     import book_sister_carrie_pic from '$lib/images/book_carry_sister_pic.jpg';
-    import book_dorian_gray_pic from '$lib/images/book_dorian_gray_pic.jpg';
-    //import book_great_gatsby_pic from '$lib/images/book_great_gatsby_pic.jpg';
-    //import book_shining_pic from '$lib/images/book_shining_pic.JPG';
-    //import book_flowers_alg_pic from '$lib/images/book_flowers_alg_pic.JPG';
+    
 
     import Card from './Card.svelte';
 
@@ -20,7 +17,7 @@
             book_name: "The Portrait of Dorian Gray",
             author: "Oscar Wilde",
             language: "Russian",
-            image_url: book_dorian_gray_pic,
+            //image_url: book_dorian_gray_pic,
             social_media_url: "https://web.telegram.org/k/#@nhefy"
         },
         {
