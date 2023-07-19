@@ -1,5 +1,6 @@
 <script lang="ts">
     import './LizaStyle.css';
+    import book_sister_carrie_pic from '$lib/images/picture1.jpg';
 
     import Card from './Card.svelte';
 
@@ -8,7 +9,7 @@
             book_name: "Sister Carrie",
             author: "Theodore Dreiser",
             language: "Russian",
-            //image_url: "book4.jpg",
+            image_url: book_sister_carrie_pic,
             social_media_url: "https://web.telegram.org/k/#@nhefy"
         },
         {
