@@ -1,50 +1,143 @@
 <script lang="ts">
     import './LizaStyle.css';
+
+    import Card from './Card.svelte';
+
+    const bookData = [
+        {
+            book_name: "Sister Carrie",
+            author: "Theodore Dreiser",
+            language: "Russian",
+            image_url: "images/book_pictures_for_BC/picture1.jpg",
+            social_media_url: "https://web.telegram.org/k/#@nhefy"
+        },
+        {
+            book_name: "The Portrait of Dorian Gray",
+            author: "Oscar Wilde",
+            language: "Russian",
+            image_url: "images/book_pictures_for_BC/picture4.jpg",
+            social_media_url: "https://web.telegram.org/k/#@nhefy"
+        },
+        {
+            book_name: "The Great Gatsby",
+            author: "Francis Scott Fitzgerald",
+            language: "French",
+            image_url: "images/book_pictures_for_BC/picture2.jpg",
+            social_media_url: "https://web.telegram.org/k/#@nhefy"
+        },
+        {
+            book_name: "Book 4",
+            author: "Author 4",
+            language: "French",
+            image_url: "book4.jpg",
+            social_media_url: "https://web.telegram.org/k/#@nhefy"
+        },
+        {
+            book_name: "Book 4",
+            author: "Author 4",
+            language: "French",
+            image_url: "book4.jpg",
+            social_media_url: "https://web.telegram.org/k/#@nhefy"
+        },
+        {
+            book_name: "Sister Carrie",
+            author: "Theodore Dreiser",
+            language: "Russian",
+            image_url: "images/book_pictures_for_BC/picture1.jpg",
+            social_media_url: "https://web.telegram.org/k/#@nhefy"
+        },
+        {
+            book_name: "The Portrait of Dorian Gray",
+            author: "Oscar Wilde",
+            language: "Russian",
+            image_url: "images/book_pictures_for_BC/picture4.jpg",
+            social_media_url: "https://web.telegram.org/k/#@nhefy"
+        },
+        {
+            book_name: "The Great Gatsby",
+            author: "Francis Scott Fitzgerald",
+            language: "French",
+            image_url: "images/book_pictures_for_BC/picture2.jpg",
+            social_media_url: "https://web.telegram.org/k/#@nhefy"
+        },
+        {
+            book_name: "Book 4",
+            author: "Author 4",
+            language: "French",
+            image_url: "book4.jpg",
+            social_media_url: "https://web.telegram.org/k/#@nhefy"
+        },
+        {
+            book_name: "Book 4",
+            author: "Author 4",
+            language: "French",
+            image_url: "book4.jpg",
+            social_media_url: "https://web.telegram.org/k/#@nhefy"
+        },
+    ];
+
+    function getBooksByRemainder(remainder: number) {
+        return bookData.filter((book, i) => i % 3 === remainder);
+    }
+
 </script>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;600;800&display=swap" rel="stylesheet">
+<svelte:head>
+	<title>Book Crossing</title>
+</svelte:head>
 
-    <title>Book Crossing</title>
-</head>
-<body>
-    <div class="main">
+<main>
+    <div class="transparent_container">
         
+        <h1 id="book_crossing_title">BOOK CROSSING</h1>
         
         <div class="transparent_container">
-            
-            <h1 id="book_crossing_title">BOOK CROSSING</h1>
-            
-            <div class="transparent_container">
-                <p id="book_crossing_text">
-                    Here you can find some books that people are ready to lend out <span class="highlight">for free</span>. 
-                    To borrow a book, simply contact its owner via Telegram that is linked to the book profile, 
-                    If you want to lend your book, you can also post it here, but do not forget to take a picture of it!
-                </p>
-            </div>
-
-            <div class="transparent_container" id="second_par">
-                <p id="book_crossing_text">
-                    If you want to share your book, please, <a href="https://t.me/innobooklovers">contact us via Telegram</a> and send us information about your book. If it does not violate any university rules, we will post it here.
-                </p>
-            </div>
-
+            <p id="book_crossing_text">
+                Here you can find some books that people are ready to lend out <span class="highlight">for free</span>. 
+                To borrow a book, simply contact its owner via Telegram that is linked to the book profile, 
+                If you want to lend your book, you can also post it here, but do not forget to take a picture of it!
+            </p>
         </div>
-        
-        <div id="cards">
-            <div id="card-container" class="card-container">
-                <div id="container_Zero" class="column_Container"></div>
-                <div id="container_One" class="column_Container"></div>
-                <div id="container_Two" class="column_Container"></div>
-            
-            </div>
+
+        <div class="transparent_container" id="second_par">
+            <p id="book_crossing_text">
+                If you want to share your book, please, <a href="https://t.me/innobooklovers">contact us via Telegram</a> and send us information about your book. If it does not violate any university rules, we will post it here.
+            </p>
         </div>
-    
+
     </div>
-</body>
+
+    <div id="container-wrapper">
+        <div id="cards" class="card-container">
+            {#each Array.from({ length: 3 }) as _, i}
+            <div class="column_Container">
+                {#each getBooksByRemainder(i) as book}
+                <Card
+                    book_name={book.book_name}
+                    author={book.author}
+                    language={book.language}
+                    image_url={book.image_url}
+                    social_media_url={book.social_media_url}
+                />
+                {/each}
+            </div>
+            {/each}
+        </div>
+    </div>
+    <!-- <div id="cards">
+        <div id="card-container" class="card-container">
+          {#each bookData as book}
+            <Card
+              book_name={book.book_name}
+              author={book.author}
+              language={book.language}
+              image_url={book.image_url}
+              social_media_url={book.social_media_url}
+            />
+          {/each}
+        </div>
+      </div> -->
+</main>
+
+
