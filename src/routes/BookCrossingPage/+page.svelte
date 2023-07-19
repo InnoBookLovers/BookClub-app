@@ -1,6 +1,6 @@
 <script lang="ts">
     import './LizaStyle.css';
-    import book_sister_carrie_pic from '$lib/images/picture1.jpg';
+    import book_sister_carrie_pic from '$lib/images/book_carry_sister_pic.jpg';
 
     import Card from './Card.svelte';
 
