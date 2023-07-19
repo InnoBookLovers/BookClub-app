@@ -67,7 +67,7 @@
 
         <div class="transparent_container" id="second_par">
             <p id="book_crossing_text">
-                If you want to share your book, please, <a href="https://t.me/innobooklovers">contact us via Telegram</a> and send us information about your book. If it does not violate any university rules, we will post it here.
+                If you want to share your book, please, <a id="contact_us_via_tg" href="https://t.me/innobooklovers">contact us via Telegram</a> and send us information about your book. If it does not violate any university rules, we will post it here.
             </p>
         </div>
 
