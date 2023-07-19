@@ -3,8 +3,8 @@
     import book_sister_carrie_pic from '$lib/images/book_carry_sister_pic.jpg';
     import book_dorian_gray_pic from '$lib/images/book_dorian_gray_pic.jpg';
     import book_great_gatsby_pic from '$lib/images/book_great_gatsby_pic.jpg';
-    import book_shining_pic from '$lib/images/book_shining_pic.jpg';
-    import book_flowers_alg_pic from '$lib/images/book_flowers_alg_pic.jpg';
+    import book_shining_pic from '$lib/images/book_shining_pic.png';
+    import book_flowers_alg_pic from '$lib/images/book_flowers_alg_pic.png';
     
 
     import Card from './Card.svelte';
