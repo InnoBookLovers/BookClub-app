@@ -8,70 +8,21 @@
             book_name: "Sister Carrie",
             author: "Theodore Dreiser",
             language: "Russian",
-            image_url: "book4.jpg",
+            //image_url: "book4.jpg",
             social_media_url: "https://web.telegram.org/k/#@nhefy"
         },
         {
             book_name: "The Portrait of Dorian Gray",
             author: "Oscar Wilde",
             language: "Russian",
-            image_url: "book4.jpg",
+            //image_url: "book4.jpg",
             social_media_url: "https://web.telegram.org/k/#@nhefy"
         },
         {
             book_name: "The Great Gatsby",
             author: "Francis Scott Fitzgerald",
             language: "French",
-            image_url: "book4.jpg",
-            social_media_url: "https://web.telegram.org/k/#@nhefy"
-        },
-        {
-            book_name: "Book 4",
-            author: "Author 4",
-            language: "French",
-            image_url: "book4.jpg",
-            social_media_url: "https://web.telegram.org/k/#@nhefy"
-        },
-        {
-            book_name: "Book 4",
-            author: "Author 4",
-            language: "French",
-            image_url: "book4.jpg",
-            social_media_url: "https://web.telegram.org/k/#@nhefy"
-        },
-        {
-            book_name: "Sister Carrie",
-            author: "Theodore Dreiser",
-            language: "Russian",
-            image_url: "book4.jpg",
-            social_media_url: "https://web.telegram.org/k/#@nhefy"
-        },
-        {
-            book_name: "The Portrait of Dorian Gray",
-            author: "Oscar Wilde",
-            language: "Russian",
-            image_url: "book4.jpg",
-            social_media_url: "https://web.telegram.org/k/#@nhefy"
-        },
-        {
-            book_name: "The Great Gatsby",
-            author: "Francis Scott Fitzgerald",
-            language: "French",
-            image_url: "book4.jpg",
-            social_media_url: "https://web.telegram.org/k/#@nhefy"
-        },
-        {
-            book_name: "Book 4",
-            author: "Author 4",
-            language: "French",
-            image_url: "book4.jpg",
-            social_media_url: "https://web.telegram.org/k/#@nhefy"
-        },
-        {
-            book_name: "Book 4",
-            author: "Author 4",
-            language: "French",
-            image_url: "book4.jpg",
+            //image_url: "book4.jpg",
             social_media_url: "https://web.telegram.org/k/#@nhefy"
         },
     ];
