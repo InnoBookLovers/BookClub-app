@@ -71,7 +71,7 @@
         font-family: 'League Spartan', sans-serif;
         font-size: 20px;
         color: black;
-        padding-bottom: 50px;
+        padding-bottom: 35px;
     }
     .block {
         margin-left: 32px;
