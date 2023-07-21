@@ -12,9 +12,6 @@
 </head>
 <body>
     <div class="block">
-        <div class="navbar">
-
-        </div>
         <div class="main__text">
             <h1 class="main">UPCOMING EVENTS</h1>
             <p class="text_main">Our club often makes interesting events, including books discussions, collaborations with other clubs, reading evenings, and many others! Here you can find a full list of upcoming events and check in if you want to come!</div>
