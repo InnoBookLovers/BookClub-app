@@ -1,5 +1,7 @@
 <script lang="ts">
     import bookPhoto from '$lib/images/teaeven.png';
+    import dorianPhoto from '$lib/images/dorian.png';
+    import bookPhoto2 from '$lib/images/readeven1.png';
 </script>
 <head>
     <title>Events</title>
@@ -32,7 +34,7 @@
                 </li>
                 <li class="card">
                     <div class="img">
-                       <!-- <img src="images/dorian.png" alt="there is a photo of Dorian Gray"> -->
+                        <img src={dorianPhoto} alt="there is a photo of Dorian Gray">
                     </div>
                     <div class="text">
                         <h1 class="name">“The Portrait of Dorian Gray” discussion</h1>
@@ -43,7 +45,7 @@
                 </li>
                 <li class="card">
                     <div class="img">
-<!--                        <img src="images/readeven1.png" alt="there is a book  "> -->
+                        <img src={bookPhoto2} alt="there is a book">
                     </div>
                     <div class="text">
                         <h1 class="name">Reading evening</h1>
