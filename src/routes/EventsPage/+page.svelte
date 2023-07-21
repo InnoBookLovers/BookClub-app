@@ -24,7 +24,7 @@
                     </div>
                     <div class="text">
                         <h1 class="name">Tea Club collab</h1>
-                        <p class="text_card">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.
+                        <p class="text_card">The meeting with the tea club will include discussion of books, of course, drinking tea and eating snacks.
                         <br>When: July 30, 2023<br>Where: university, green stairs
                         </p>
                     </div>
@@ -35,7 +35,7 @@
                     </div>
                     <div class="text">
                         <h1 class="name">“The Portrait of Dorian Gray” discussion</h1>
-                        <p class="text_card">Et harum quidem rerum facilis est et expedita distinctio.
+                        <p class="text_card">Discussion of Oscar Wilde's great novel "The Portrait of Dorian Gray"
                         <br>When: July 26, 2023<br>Where: ArtSpace, room TBA
                         </p>
                     </div>
@@ -46,7 +46,7 @@
                     </div>
                     <div class="text">
                         <h1 class="name">Reading evening</h1>
-                        <p class="text_card">Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+                        <p class="text_card">A reading evening is a delightful and relaxing activity that brings together individuals who share a passion for books and reading. It is an occasion where friends, family members, or even strangers gather in a comfortable and inviting setting to indulge in the pleasure of reading. 
                         <br>When: July 23, 2023<br>Where: university, reading hall 3rd floor
                         </p>
                     </div>
@@ -82,6 +82,7 @@
         background-color: white;
         border-radius: 20px;
         margin-right: 32px;
+        margin-left: 32px;
         display: flex;
         margin-bottom: 20px;
     }
@@ -98,6 +99,7 @@
         font-family: 'League Spartan', sans-serif;
         font-size: 32px;
         font-weight: 500;
+        padding-top: 19px;
     }
     .text {
         font-family: 'League Spartan', sans-serif;
