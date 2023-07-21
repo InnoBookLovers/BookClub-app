@@ -57,8 +57,12 @@
 
 <style>
     body {
-        overflow: scroll;
-        background: conic-gradient(from 3.1416rad at 30% 43%, rgba(160, 172, 168, 1) 10deg, rgba(210, 235, 227, 1) 190deg, rgba(210, 235, 227, 1) 250deg, rgba(243, 209, 197, 1), 330deg, rgba(160, 172, 168, 1));
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: conic-gradient(from 3.1416rad at 30% 43%, rgba(160, 172, 168, 1) 10deg, rgba(210, 235, 227, 1) 190deg, rgba(210, 235, 227, 1) 250deg, rgba(243, 209, 197, 1), 330deg, rgba(160, 172, 168, 1));
+    background-attachment: fixed;
+    overflow: auto;
     }
     .main {
         font-family: 'League Spartan', sans-serif;
