@@ -74,7 +74,7 @@
     }
     .block {
         margin-left: 32px;
-     <!--   margin-top: 26px; -->
+        margin-top: 26px;
         margin-right: 32px;
     }
     .card {
