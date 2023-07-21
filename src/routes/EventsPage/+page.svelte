@@ -65,7 +65,6 @@
         font-size: 48px;
         color: #73744A;
         padding-left: 22px;
-        margin-top: 106px;
     }
     .text_main {
         padding-left: 21px;
@@ -75,7 +74,7 @@
     }
     .block {
         margin-left: 32px;
-        margin-top: 26px;
+     <!--   margin-top: 26px; -->
         margin-right: 32px;
     }
     .card {
