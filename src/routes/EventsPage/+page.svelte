@@ -77,6 +77,9 @@
         color: black;
         padding-bottom: 35px;
     }
+    a {
+        color: black;
+    }
     .block {
         margin-left: 32px;
         margin-top: 26px;
