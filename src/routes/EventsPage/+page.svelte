@@ -23,7 +23,7 @@
                        <img src={bookPhoto} alt="there is a book with tea">
                     </div>
                     <div class="text">
-                        <a href="https://t.me/innobooklovers/5"><h1 class="name">Tea Club collab</h1></a>
+                        <a href="https://t.me/innobooklovers/5" target="_blank"><h1 class="name">Tea Club collab</h1></a>
                         <p class="text_card">The meeting with the tea club will include discussion of books, of course, drinking tea and eating snacks.
                         <br>When: July 30, 2023<br>Where: university, green stairs
                         </p>
@@ -34,7 +34,7 @@
                         <img src={dorianPhoto} alt="there is a photo of Dorian Gray">
                     </div>
                     <div class="text">
-                        <a href="https://t.me/innobooklovers/6"><h1 class="name">“The Portrait of Dorian Gray” discussion</h1></a>
+                        <a href="https://t.me/innobooklovers/6" target="_blank"><h1 class="name">“The Portrait of Dorian Gray” discussion</h1></a>
                         <p class="text_card">Discussion of Oscar Wilde's great novel "The Portrait of Dorian Gray"
                         <br>When: July 26, 2023<br>Where: ArtSpace, room TBA
                         </p>
@@ -45,7 +45,7 @@
                         <img src={bookPhoto2} alt="there is a book">
                     </div>
                     <div class="text">
-                        <a href="https://t.me/innobooklovers/7"><h1 class="name">Reading evening</h1></a>
+                        <a href="https://t.me/innobooklovers/7" target="_blank"><h1 class="name">Reading evening</h1></a>
                         <p class="text_card">A reading evening is a delightful and relaxing activity that brings together individuals who share a passion for books and reading. It is an occasion where friends, family members, or even strangers gather in a comfortable and inviting setting to indulge in the pleasure of reading. 
                         <br>When: July 23, 2023<br>Where: university, reading hall 3rd floor
                         </p>
@@ -79,6 +79,7 @@
     }
     a {
         color: black;
+        text-decoration: none; 
     }
     .block {
         margin-left: 32px;
