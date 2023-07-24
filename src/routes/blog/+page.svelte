@@ -185,10 +185,14 @@
 		<div id="column3">
 			<div class="column1Item">
 				<h1 class="Events">Upcoming events</h1>
-				<a href="https://t.me/innobooklovers/5" target="_blank"><img src={bookPhoto} alt="there is a book with tea" style="width: 200px; height: 130px;"/></a>
-				<div class="bottomtext1">Tea Club collab</div>
-				<a href="https://t.me/innobooklovers/6" target="_blank"><img src={dorianPhoto} alt="there is a photo of Dorian Gray" style="width: 200px; height: 130px;"/></a>
-				<div class="bottomtext2">“The Portrait of Dorian Gray” discussion</div>
+				<div class="first">
+					<img src={bookPhoto} alt="there is a book with tea" />
+					<div class="bottomtext">Tea Club collab</div>
+				</div>
+				<div class="second">
+					<img src={dorianPhoto} alt="there is a photo of Dorian Gray" />
+					<div class="bottomtext">“The Portrait of Dorian Gray” discussion</div>
+				</div>
 			</div>
 		</div>
 	</main>
@@ -218,10 +222,14 @@
 		font-size: 24px;
 	}
 
-	.column1Item {
+	.first {
+		position: relative;
 	    	text-align: center;
 	}
-
+	.second {
+		position: relative;
+	    	text-align: center;
+	}
 	.bottomtext1 {
 		font-family: 'League Spartan', sans-serif;
 		font-weight: 500;
