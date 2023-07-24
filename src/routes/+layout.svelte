@@ -13,7 +13,7 @@
 			const {
 				data: { user }
 			} = await supabase.auth.getUser();
-			console.log(user);
+
 			// Fetch the current user id
 			const { data, error } = await supabase.from('users').select('*').eq('id', user?.id);
 			if (error) {
