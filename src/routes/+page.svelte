@@ -86,7 +86,7 @@
 		font-weight: 900px;
 		text-align: left;
 		margin-left: 180px;
-		margin-top: 100px;
+		margin-top: 30px;
 		font-size: 60px;
 	}
 	.whoAreWe {
