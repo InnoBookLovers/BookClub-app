@@ -185,9 +185,9 @@
 		<div id="column3">
 			<div class="column1Item">
 				<h1 class="Events">Upcoming events</h1>
-				<a href="https://t.me/innobooklovers/5" target="_blank"><img src={bookPhoto} alt="there is a book with tea" style="width: 186px; height: 108px;"/></a>
+				<a href="https://t.me/innobooklovers/5" target="_blank"><img src={bookPhoto} alt="there is a book with tea" style="width: 200px; height: 130px;"/></a>
 				<div class="bottomtext1">Tea Club collab</div>
-				<a href="https://t.me/innobooklovers/6" target="_blank"><img src={dorianPhoto} alt="there is a photo of Dorian Gray" style="width: 186px; height: 108px;"/></a>
+				<a href="https://t.me/innobooklovers/6" target="_blank"><img src={dorianPhoto} alt="there is a photo of Dorian Gray" style="width: 200px; height: 130px;"/></a>
 				<div class="bottomtext2">“The Portrait of Dorian Gray” discussion</div>
 			</div>
 		</div>
@@ -238,7 +238,7 @@
 		font-size: 18px;
 		position: absolute;
 		bottom: 12px;
-		left: 12px;
+		left: 10px;
 		color: white;
 	}
 	#column1 {
