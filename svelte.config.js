@@ -13,7 +13,10 @@ const config = {
 			// base: dev ? '' : '/BookClub-app'
 		},
 
-		adapter: adapter()
+		adapter: adapter(),
+		prerender: {
+			entries: ['*', '/blog/*', '/bookCrossing/books/*', '/events', '/login', '/logout', '/signup'],
+		  },
 	}
 };
 
