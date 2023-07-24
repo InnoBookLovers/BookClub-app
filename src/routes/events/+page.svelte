@@ -114,12 +114,6 @@
 		display: flex;
 		margin-bottom: 20px;
 	}
-	.card2 {
-		background-color: white;
-	}
-	.card3 {
-		background-color: white;
-	}
 	.img {
 		padding: 19px 19px 19px 19px;
 	}
