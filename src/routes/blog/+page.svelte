@@ -218,6 +218,12 @@
 		font-size: 24px;
 	}
 
+	.column1Item {
+		position: relative;
+	    	text-align: center;
+    		color: white;
+	}
+
 	.bottomtext {
 		font-family: 'League Spartan', sans-serif;
 		font-weight: 500;
