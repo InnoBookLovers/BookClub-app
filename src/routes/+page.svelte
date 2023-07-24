@@ -85,8 +85,8 @@
 		color: rgba(115, 116, 74, 1);
 		font-weight: 900px;
 		text-align: left;
-		margin-left: 180px;
-		margin-top: 30px;
+		margin-left: 30px;
+		margin-top: 40px;
 		font-size: 60px;
 	}
 	.whoAreWe {
