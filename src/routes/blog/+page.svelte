@@ -185,10 +185,10 @@
 		<div id="column3">
 			<div class="column1Item">
 				<h1 class="Events">Upcoming events</h1>
-				<img src={bookPhoto} alt="there is a book with tea" style="width: 186px; height: 108px;"/>
-				<div class="bottomtext">Tea Club collab</div>
-				<img src={dorianPhoto} alt="there is a photo of Dorian Gray" style="width: 186px; height: 108px;"/>
-				<div class="bottomtext">“The Portrait of Dorian Gray” discussion</div>
+				<a href="https://t.me/innobooklovers/5" target="_blank"><img src={bookPhoto} alt="there is a book with tea" style="width: 186px; height: 108px;"/></a>
+				<div class="bottomtext1">Tea Club collab</div>
+				<a href="https://t.me/innobooklovers/6" target="_blank"><img src={dorianPhoto} alt="there is a photo of Dorian Gray" style="width: 186px; height: 108px;"/></a>
+				<div class="bottomtext2">“The Portrait of Dorian Gray” discussion</div>
 			</div>
 		</div>
 	</main>
@@ -221,10 +221,9 @@
 	.column1Item {
 		position: relative;
 	    	text-align: center;
-    		color: white;
 	}
 
-	.bottomtext {
+	.bottomtext1 {
 		font-family: 'League Spartan', sans-serif;
 		font-weight: 500;
 		font-size: 18px;
@@ -233,7 +232,15 @@
 		left: 12px;
 		color: white;
 	}
-
+	.bottomtext2 {
+		font-family: 'League Spartan', sans-serif;
+		font-weight: 500;
+		font-size: 18px;
+		position: absolute;
+		bottom: 12px;
+		left: 12px;
+		color: white;
+	}
 	#column1 {
 		display: flex;
 		flex-direction: column;
