@@ -15,7 +15,7 @@ const config = {
 
 		adapter: adapter(),
 		prerender: {
-			entries: ['*', '/blog/*', '/bookCrossing/books/*', '/events', '/login', '/logout', '/signup'],
+			entries: ['/bookCrossing/books/*'],
 		  },
 	}
 };
