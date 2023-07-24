@@ -4,6 +4,8 @@
 	import { onMount } from 'svelte';
 	import { readable } from 'svelte/store';
 	import Photo from '$lib/images/NoPhoto.webp';
+	import bookPhoto from '$lib/images/teaeven.png';
+	import dorianPhoto from '$lib/images/dorian.png';
 
 	let User: { name: string; surname: string; photo_url: string } | null = null;
 
@@ -182,7 +184,11 @@
 
 		<div id="column3">
 			<div class="column1Item">
-				<h1>Events</h1>
+				<h1 class="Events">Upcoming events</h1>
+				<img src={bookPhoto} alt="there is a book with tea" />
+				<div class="bottomtext">Tea Club collab</div>
+				<img src={dorianPhoto} alt="there is a photo of Dorian Gray" />
+				<div class="bottomtext">“The Portrait of Dorian Gray” discussion</div>
 			</div>
 		</div>
 	</main>
@@ -204,6 +210,21 @@
 
 		padding-top: 100px;
 		padding-bottom: 100px;
+	}
+
+	.Events {
+		font-family: 'League Spartan', sans-serif;
+		font-weight: 500;
+		font-size: 24px;
+	}
+
+	.bottomtext {
+		font-family: 'League Spartan', sans-serif;
+		font-weight: 500;
+		font-size: 18px;
+		position: absolute;
+		bottom: 12px;
+		left: 12px;
 	}
 
 	#column1 {
@@ -237,7 +258,6 @@
 	}
 
 	#column3 {
-		background-color: rgb(206, 206, 104);
 		display: flex;
 		flex-direction: column;
 		flex-wrap: nowrap;
