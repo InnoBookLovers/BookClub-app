@@ -219,7 +219,6 @@
 	}
 
 	.column1Item {
-		position: relative;
 	    	text-align: center;
 	}
 
