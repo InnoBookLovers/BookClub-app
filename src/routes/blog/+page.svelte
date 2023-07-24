@@ -185,9 +185,9 @@
 		<div id="column3">
 			<div class="column1Item">
 				<h1 class="Events">Upcoming events</h1>
-				<img src={bookPhoto} alt="there is a book with tea" />
+				<img src={bookPhoto} alt="there is a book with tea" style="width: 186px; height: 108px;"/>
 				<div class="bottomtext">Tea Club collab</div>
-				<img src={dorianPhoto} alt="there is a photo of Dorian Gray" />
+				<img src={dorianPhoto} alt="there is a photo of Dorian Gray" style="width: 186px; height: 108px;"/>
 				<div class="bottomtext">“The Portrait of Dorian Gray” discussion</div>
 			</div>
 		</div>
@@ -225,6 +225,7 @@
 		position: absolute;
 		bottom: 12px;
 		left: 12px;
+		color: white;
 	}
 
 	#column1 {
