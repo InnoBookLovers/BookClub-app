@@ -1,3 +1,5 @@
-// import { writable } from 'svelte/store';
-// import supabase from '$lib/supabase';
-// export let user = writable(supabase.auth.user() ||false);
+import type { User } from '@supabase/supabase-js';
+import { writable } from 'svelte/store';
+
+// Create a writable session store to hold the user data
+export const userStore = writable<User | null>(null);
