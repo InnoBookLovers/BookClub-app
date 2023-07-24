@@ -31,6 +31,7 @@
                 </li>
                 <li class="card">
                     <div class="img">
+                        <!-- svelte-ignore a11y-img-redundant-alt -->
                         <img src={dorianPhoto} alt="there is a photo of Dorian Gray">
                     </div>
                     <div class="text">
@@ -94,12 +95,12 @@
         display: flex;
         margin-bottom: 20px;
     }
-    .card2 {
+    /* .card2 {
         background-color: white;
     }
     .card3 {
         background-color: white;
-    }
+    } */
     .img {
         padding: 19px 19px 19px 19px;
     }
