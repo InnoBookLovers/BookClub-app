@@ -123,7 +123,7 @@
 				{#await fetchPhoto(User.photo_url)}
 					<p>Loading photo...</p>
 				{:then photoUrl}
-					<img src={photoUrl} alt="User Photo" class="UserPhotoLeftColumn" />
+					<img src={photoUrl} alt="" class="UserPhotoLeftColumn" />
 				{:catch error}
 					<p>Error loading photo</p>
 				{/await}
@@ -131,7 +131,7 @@
 			</div>
 		{:else}
 			<div id="column1">
-				<img src={Photo} alt="User Photo" class="UserPhotoLeftColumn" />
+				<img src={Photo} alt="" class="UserPhotoLeftColumn" />
 				<p class="PersonalInfo">Name Surname</p>
 			</div>
 		{/if}
@@ -159,9 +159,9 @@
 						<div id="Post">
 							<div class="PostHeader">
 								{#await fetchPhoto(post.photo_url)}
-									<img src={Photo} alt="User Photo" class="UserPhoto" />
+									<img src={Photo} alt="" class="UserPhoto" />
 								{:then photoUrl}
-									<img src={photoUrl} alt="User Photo" class="UserPhoto" />
+									<img src={photoUrl} alt="" class="UserPhoto" />
 								{:catch error}
 									<p>Error loading photo</p>
 								{/await}
