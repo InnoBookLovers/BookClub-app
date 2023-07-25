@@ -4,7 +4,6 @@
   export let language: string;
   export let image_url: string;
   export let social_media_url: string;
-  export let comment: string;
   let id: number;
 
 </script>
