@@ -101,7 +101,7 @@
                             language={book.language}
                             image_url={book.image_url}
                             social_media_url={book.social_media_url}
-                            comment={book.comment}
+                            comment={book.comment || ''}
                         />
                     </a>
                 {/each}
