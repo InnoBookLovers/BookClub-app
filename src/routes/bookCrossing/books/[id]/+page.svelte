@@ -1,13 +1,15 @@
 <script lang="ts">
-    import './LizaStyle.css';
+  
+    import { onMount } from "svelte";
+    import { page } from "$app/stores";
+    import { goto } from "$app/navigation";
+  
     import book_sister_carrie_pic from '$lib/images/book_carry_sister_pic.jpg';
     import book_dorian_gray_pic from '$lib/images/book_dorian_gray_pic.jpg';
     import book_great_gatsby_pic from '$lib/images/book_great_gatsby_pic.jpg';
     import book_shining_pic from '$lib/images/book_shining_pic.png';
     import book_flowers_alg_pic from '$lib/images/book_flowers_alg_pic.png';
-
-    import Card from './Card.svelte';
-
+  
     const bookData = [
       {
           book_name: "Sister Carrie",
@@ -56,60 +58,74 @@
           comment:"Bought this book a year ago. It is in a good condition. Liked the plot very much"
       },
     ];
-
-    function getBooksByRemainder(remainder: number) {
-        return bookData.filter((book, i) => i % 3 === remainder);
+  
+    interface Book {
+      id: number; 
+      book_name: string;
+      author: string;
+      language: string;
+      image_url: string;
+      social_media_url: string;
+      comment: string;
     }
-
-</script>
-
-
-<svelte:head>
-	<title>Book Crossing</title>
-</svelte:head>
-
-<main>
+  
+    let book: Book | null;
+  
+    onMount(() => {
+  
+      const id = parseInt($page.params.id);
+      book = bookData.find((b) => b.id === id) || null;
+      if (!book) {
+        goto("/"); // Redirect to homepage
+        // or
+        // goto("/404"); // Redirect to a custom 404 page
+      }
+    });
+  </script>
+    
+  <main>
     <div class="transparent_container">
         
         <h1 id="book_crossing_title">BOOK CROSSING</h1>
         
-        <div class="transparent_container">
-            <p id="book_crossing_text">
-                Here you can find some books that people are ready to lend out <span class="highlight">for free</span>. 
-                To borrow a book, simply contact its owner via Telegram that is linked to the book profile, 
-                If you want to lend your book, you can also post it here, but do not forget to take a picture of it!
-            </p>
-        </div>
-
-        <div class="transparent_container" id="second_par">
-            <p id="book_crossing_text">
-                If you want to share your book, please, <a id="contact_us_via_tg" href="https://t.me/innobooklovers">contact us via Telegram</a> and send us information about your book. If it does not violate any university rules, we will post it here.
-            </p>
-        </div>
-
+    </div>
+    <div class="transparent_container">
+        <a href='\bookCrossing' class='Liza-button-separate-page'>← Back to catalog</a>
     </div>
 
-    <div id="container-wrapper">
-        <div id="cards" class="card-container">
-            {#each Array.from({ length: 3 }) as _, i}
-            <div class="column_Container">
-                {#each getBooksByRemainder(i) as book}
-                    <a href={`/bookCrossing/books/${book.id}`}>
-                        <Card
-                            book_name={book.book_name}
-                            author={book.author}
-                            language={book.language}
-                            image_url={book.image_url}
-                            social_media_url={book.social_media_url}
-                            comment={book.comment}
-                        />
+    <div class="Liza-card-separate-page">
+
+        {#if book}
+            <div class="card-on-separate-page">
+                <img class='Liza-separate-page-img' src={book.image_url} alt="{book.book_name} Book Cover">
+                
+                <div class='text-container-on-separate-page'>
+                
+                    <h1 class='book-name-on-separate-page'>{book.book_name}</h1>
+                    <p class='author-on-separate-page'>Author: <span class="highlight-on-separate-page">{book.author}</span></p>
+                    <p class='language-on-separate-page'>Language: <span class='highlight-lang-on-separate-page'>{book.language}</span></p>
+
+                    <p class='author-on-separate-page'>Comments by the owner:</p>
+                    <p class='comment-about-book'>
+                        {#if book.comment}
+                            {book.comment}
+                        {:else}
+                            No comments about book.
+                        {/if}
+                        
+                    </p>
+
+                    
+                    <a href={book.social_media_url} target="_blank">
+                        <button class='button-on-separate-page'>Contact Owner</button>
                     </a>
-                {/each}
+                    
+                </div>
             </div>
-            {/each}
-        </div>
-    </div>
+        {:else}
+        <p>Book not found</p>
+        {/if}
+
+    </div>  
+  </main>
     
-</main>
-
-
