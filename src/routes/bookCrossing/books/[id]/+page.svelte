@@ -90,7 +90,7 @@
         
     </div>
     <div class="transparent_container">
-        <a href='\bookCrossing' class='Liza-button-separate-page'>← Back to catalog</a>
+        <a href='/bookCrossing' class='Liza-button-separate-page'>← Back to catalog</a>
     </div>
 
     <div class="Liza-card-separate-page">
