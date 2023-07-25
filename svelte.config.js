@@ -16,7 +16,7 @@ const config = {
 
 		adapter: adapter({
       
-      			out: 'public'
+      			out: 'build'
     		})
 		
 	}
