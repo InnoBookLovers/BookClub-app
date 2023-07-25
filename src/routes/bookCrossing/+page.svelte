@@ -94,7 +94,7 @@
             {#each Array.from({ length: 3 }) as _, i}
             <div class="column_Container">
                 {#each getBooksByRemainder(i) as book}
-                    <a href={`/bookCrossing/books/${book.id}`}>
+                    <a class='card-not-link-bc-page' href={`/bookCrossing/books/${book.id}`}>
                         <Card
                             book_name={book.book_name}
                             author={book.author}
