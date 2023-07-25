@@ -123,7 +123,6 @@
 				{#await fetchPhoto(User.photo_url)}
 					<p>Loading photo...</p>
 				{:then photoUrl}
-					<!-- svelte-ignore a11y-img-redundant-alt -->
 					<img src={photoUrl} alt="User Photo" class="UserPhotoLeftColumn" />
 				{:catch error}
 					<p>Error loading photo</p>
@@ -132,7 +131,6 @@
 			</div>
 		{:else}
 			<div id="column1">
-				<!-- svelte-ignore a11y-img-redundant-alt -->
 				<img src={Photo} alt="User Photo" class="UserPhotoLeftColumn" />
 				<p class="PersonalInfo">Name Surname</p>
 			</div>
@@ -160,7 +158,6 @@
 					{#each $posts as post}
 						<div id="Post">
 							<div class="PostHeader">
-								<!-- svelte-ignore a11y-img-redundant-alt -->
 								{#await fetchPhoto(post.photo_url)}
 									<img src={Photo} alt="User Photo" class="UserPhoto" />
 								{:then photoUrl}
