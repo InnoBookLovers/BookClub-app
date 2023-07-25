@@ -38,6 +38,14 @@ jobs:
         with:
           # this should match the `pages` option in your adapter-static options
           path: 'build/'
+      - name: Format
+        run: npm run format
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Check
+        run: npm run check
 
   deploy:
     needs: build_site
