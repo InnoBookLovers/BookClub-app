@@ -5,7 +5,7 @@
   export let image_url: string;
   export let social_media_url: string;
   let id: number;
-
+  export let comment: string;
 </script>
   
 <div class="card">
